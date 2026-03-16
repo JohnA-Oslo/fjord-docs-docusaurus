@@ -26,16 +26,59 @@
   --ifm-color-primary: #5ba3d0;
   --ifm-color-primary-dark: #4a96c8;
   --ifm-color-primary-darker: #4190c4;
-  --ifm-color-primary-darkest: #2f7db8;
+  --ifm-color-primary-darkest: #043052;
   --ifm-color-primary-light: #6cb0d8;
   --ifm-color-primary-lighter: #75b5db;
   --ifm-color-primary-lightest: #8ec3e3;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+h1, h2, h3, h4 {
+  color: #064380;
+}
+
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4 {
+  color: #7bbfe9;
+}
+
+li::marker {
+  color: #064380;
+}
+
+[data-theme='dark'] li::marker {
+  color: #7bbfe9;
+}
+
+.navbar {
+  height: 80px;
+} 
 .navbar__logo {
   height: 40px;
   margin-right: 30px;
+}
+
+.navbar__title {
+  font-size: 20px;
+  color: #064380;
+  margin-top: 20px;
+}
+
+.navbar__item {
+  margin-top: 24px;
+  color: #064380;
+}
+
+.navbar__toggle,
+.colorModeToggle_DEke {
+  margin-top: 20px;
+  color: #064380;
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #7bbfe9;
 }
 
 .navbar__brand {
