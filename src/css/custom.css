@@ -66,18 +66,25 @@ li::marker {
   margin-top: 20px;
 }
 
+[data-theme='dark'] .navbar__title {
+  color: #7bbfe9;
+}
+
 .navbar__item {
   margin-top: 24px;
   color: #064380;
 }
 
-.navbar__toggle,
-.colorModeToggle_DEke {
-  margin-top: 20px;
+[data-theme='dark'] .navbar__item {
+  color: #7bbfe9;
+}
+
+.clean-btn.clean-btn.toggleButton_gllP {
+  margin-top: 11px;
   color: #064380;
 }
 
-[data-theme='dark'] .navbar__title {
+[data-theme='dark'] .clean-btn.clean-btn.toggleButton_gllP {
   color: #7bbfe9;
 }
 
