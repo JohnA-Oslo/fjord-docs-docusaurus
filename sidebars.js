@@ -1,6 +1,7 @@
 /** @type {import('@docusaurus/types').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
+    'index',
     {
       type: 'category',
       label: 'Getting Started',
