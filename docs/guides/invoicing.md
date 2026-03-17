@@ -121,7 +121,7 @@ curl -H "X-API-Key: $FJORD_API_KEY" \
 A successful response returns:
 
 - `data`: array of invoices
-- `pagination`: { limit, offset, total, has_more }
+- `pagination`: `{ limit, offset, total, has_more }`
 
 ## Get an invoice
 
