@@ -117,3 +117,7 @@ li::marker {
 .breadcrumbHomeIcon_YNFT {
   color: #064380;
 }
+
+[data-theme='dark'] .breadcrumbHomeIcon_YNFT {
+  color: #7bbfe9;
+}
