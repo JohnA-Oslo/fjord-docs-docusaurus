@@ -1,5 +1,7 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
+import {createRequire} from 'module';
+const require = createRequire(import.meta.url);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -31,6 +33,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          docItemComponent: '@theme/ApiItem',
         },
         blog: false,
         theme: {
@@ -48,7 +51,28 @@ const config = {
           language: 'en',
         },
       ],
+    'docusaurus-theme-openapi-docs',
+  ],
+
+  plugins: [
+    './plugins/webpack-patch.js',
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: 'openapi',
+        docsPluginId: 'classic',
+        config: {
+          fjord: {
+            specPath: 'openapi/fjord-expense-api-revised.yaml',
+            outputDir: 'docs/api',
+            sidebarOptions: {
+              groupPathsBy: 'tag',
+            },
+          },
+        },
+      },
     ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

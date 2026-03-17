@@ -1,0 +1,69 @@
+---
+id: delete-receipt
+title: "Delete a receipt"
+description: "Delete a receipt. Cannot delete receipts attached to submitted expenses."
+sidebar_label: "Delete a receipt"
+hide_title: true
+hide_table_of_contents: true
+api: eJztmV9v2zYQwL/KgdhDiylyknbA5pfNa1PA2IYGbQpsiD33TJ4tdhSpkpQb19B3H0jK/yInzYA9Ki8RpOPdkXe/I83bMI9Lx4a37B1xkpV3bJoxQY5bWXlpNBuy16TIEyDYJJLDK9TaeBDpQ/vaAXqPvCAB3oCr56X0ngTQXUXakctZxiq0WJInG0xumMaS2JC1CmZSsIzJYLJCX7CMWfpcS0uCDb2tKWOOF1QiG26YX1dhpPNW6iVrmmkQdpUJhsL3y/OX4d/xRNoptn4LcDXn5NyiVmrNmoy9PD/vDvoVBQQ/yHmWMW60J+2DGFaVkhyD2OCTC7KbroNm/om4P5rKLSNrjQ3rXFlTkfUy+Zxef2MsN4JYxkpyDpfUfiQXF6+jMQp3VitjdIdlpcKrFSop4hxmyfz94P+BvJCaziyhwLkiiGIQNOdhzbaOPGrlrSYwFkpjCRaSlHCAlkDqaD7qOZjGo6osfZ79uHjBL/By3nH2lbGWVJwOjF/DwlhwdVUZ6weC5vVyKfUyWhPkUSp3YAqtxXVH4dv4gAqUdB7MInl/pmhFCuIyaE93vkbVrkurOOS69FS6U+E8jlHU+PicsTS19sFv6Vz9jbUua+ehRM8LqNB7shr+nkzE988mk3wyEZuL7LJ5/vN3QdsKVdKma6VCcBNnTfrLmJc+qryKmdEcWDlI1pRjbI5itsdklxVsnGK8RQgOKsBx0I8j23rw8vyiS+QHjbUvjJVfSfRI9kj2SJ5Gsj7mpMtkiL90TuoljK7H8A+tn8bkiy6Tb4ydSyFI90D2QPZAngZycQDJnsa/TA3CQDhQF7giwHgoDWdoX0gHlpypLaf8aWyePPYmDdHEwtS63zV7SHtIH4BUGz/bQrKH9CRDT8Dxpy6Or4xeKMk9nEFYvhTkoBaVMl/6I20PZw/nQ3Dylp0jNtvbqNIIuVhvr5tAauC1taQ9OI++ftrvzcsTwL5DT6BkKT3QHScSPaM9oz2jDzFq0dMs4jI7wGWP640xUKJeb6+EngTmD6euZsc6TAoVOLIrsrDN2x7NHs0ezRNoyhaYWQJml017OEcaah22UB5bN3G5DI8bqXjCL9AmY7sz7TiIpFZL23iJlnxh9h9iS8gXbMgG2y7SYLNvBzUsY8nV1C+qrWJDVnhfueFggJXMF5+MFe2Wn7czz7kpB6uLTp5cWyNqHvMuKWVNdl+nQy3m5u4/6X2fxuyUToPTvLbSr6PXo0r+RutRHeZ5Oz38/D5UopRhh0L7fI8vt02xglBQCFfbNvvzbHQ9PksCxx61t3mRrXAHSNq3RTCHseaqFvF8hErtijCgg487jR8hGctZCKnUCxO9alPtTVgcuGoPWqPrMctYiFEyfpGf5+cdl24Kgs44IB0y2oGxS9Tya3QxXn2UqHFJQGWlzJpo10TMdt3GDLCqrFmhCo9ahEJlJCdYkm4zMJ/oib4JlyjSAYKg0kSr3BL6tk1ZmC8cHYEnXmjJUYEwvC5J+1ShOFY4l0qGSgCxbqWBQc+RZD7Z3n0ij1tPG6Ug+D7Vt1ACSpQqRfaXh3IsrnllnC9RHyi634a9v8Sb/b73f7Zs21QMFXRQKZQ61JgIzaZl93bbwA07+fCgmTvNWGGcDxKbzRwdfbCqacLrzzXZAMc01DcrU1m73TAhXXgWbLhA5eiRGT571+63z+EhJ7cQ6QBIW0YZy1i45z5qOjfTJtvSFbxIAiPOKa7ydmjnLBFQ3hW011e/X91csab5F1VE4yc=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/fjord-expense-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a receipt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/receipts/{receipt_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a receipt. Cannot delete receipts attached to submitted expenses.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./delete-receipt.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./delete-receipt.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./delete-receipt.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      
