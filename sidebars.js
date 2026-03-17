@@ -1,3 +1,5 @@
+import apiSidebar from './docs/api/sidebar.ts';
+
 /** @type {import('@docusaurus/types').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
@@ -21,7 +23,11 @@ const sidebars = {
         'guides/invoicing',
       ],
     },
-    'api-reference',
+    {
+      type: 'category',
+      label: 'API Reference',
+      items: apiSidebar,
+    },
     'webhooks',
     'errors',
   ],

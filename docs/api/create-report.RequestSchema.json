@@ -1,0 +1,1 @@
+{"title":"Body","body":{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["expense_ids"],"properties":{"expense_ids":{"type":"array","items":{"type":"string"},"minItems":1},"title":{"type":"string"},"description":{"type":"string"}}}}}}}

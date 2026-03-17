@@ -1,0 +1,69 @@
+---
+id: delete-expense
+title: "Delete an expense"
+description: "Delete an expense. Only expenses in draft status can be deleted."
+sidebar_label: "Delete an expense"
+hide_title: true
+hide_table_of_contents: true
+api: eJztmV9v2zYQwL/KgdhDiyl2knbA5pfNa1PA2IYEbQpsiD33TJ4tdhSpkpQb19B3H0hK/lM5aQbsUXmJIh3vjrz7HRnelnlcOTa6Y1f3JWlHjs0yJshxK0svjWYj9poUeQLUQElmANdabdq/HEgNwuLSg/PoKwccNSwIRBwnBixjJVosyJMNprZMY0FsxBoFcylYxmQwVaLPWcYsfaqkJcFG3laUMcdzKpCNtsxvyjDSeSv1itX1LAi70kTPR1t2ef4y/DqeQDO11iFwFefk3LJSasPqjL08P+8O+hUFBD/IeZYxbrQn7YMYlqWSHIPY8KMLstuug2bxkbg/msodI2uNDetbWlOS9TL5nF5/Yyw3gljGCnIOV9R8JOfD4nU0RuHOamWM7rEoVXi1RiVFnMM8mf866H8gz6WmM0socKEIohgEzYOwZq0jj1q51gTGQmEswVKSEg7QEkgdzUc9B9N4VJWlT/Mfly/4BV4uOs6+MtaSitOByWtYGguuKktj/VDQolqtpF5Fa4I8SuUOTKG1uOkovI4PqEBJ58Esk/dnitakIC6D9nTvK1TNujSKQ65LT4U7Fc7jGEWNj88ZC1NpH/yWzlXfWOuich4K9DyHEr0nq+Hv6VR8/2w6HUynYnuRXdbPf/4uaFujStp0pVQIbuKsTj8Z89JHlVcxM+oDKwfJmnKMLVDM95jssoJNUoxbhOCgAhwH/TiyjQcvzy+6RL7XWPncWPmFRI9kj2SP5Gkkq2NOukyG+EvnpF7B+GYC/9DmaUy+6DL5xtiFFIJ0D2QPZA/kaSCXB5DsafzLVCAMaOMhxzUBxkMpeAM+lw4sOVNZToOnsXni2Pu20RBNLE2l+12zh7SH9AFItfHzFpI9pCcZegKOP3VxfGX0Uknu4QzC8qUgB7WolPncH2l7OHs4H4KTN+wcsfkKdcCnMEIud7dR4TKKV9aSbq+jngTs5Qlg36InULKQHuieE4me0Z7RntGHGLXoaR5xmR/gssf11hgoUG/aK6EngfnDqavZiQ6TQgWO7JostHnbo9mj2aN5Ak3ZADNPwOyyaQ/nWEOlwxbKQ4MkLZfhcSMVT/gPtM7Y7kw7CSKp1dI0XqIln5v9h9gS8jkbsWHbRRpu9+2gmmUsuZr6RZVVbMRy70s3Gg6xlIPlR2NF245qZj7gphiuLzp5cmONqHjMu6SU1dnXOh1qsTD3/0nvuzRmp3QWnOaVlX4TvR6X8jfajKswz7vZ4ed3oRKlDDsU2ud7fNk2xXJCQSFcTdvsz7PxzeQsCRx71NzmRbbCHSBp3xTBAUw0V5WI5yNUaleEAR182Gn8AMnYgIWQSr000asm1d6ExYG2mza+mbCMhRgl4xeD88F5x6XbnKAzDkiHjHZg7Aq1/BJdjFcfBWpcEVBRKrMh2vUYM7DESZbeZYBlac0aVXjUIhQqIznBinSTgYOpnurbcIkiHSAIKky0yi1hSG9vwOXmM0dH4InnWnJUIAyvCtI+VSiOJS6kkqESQKxbaWDQcyQ5mLZ3n8jj1tNEKQi+S/UtlIACpUqR/eWhHItrXhrnC9QHijrt16/XeLvf+P6PXm2Tg6F0DkuFUofiEmnZNtDetZ3bsIWPDrq4s4zlxvkgsd0u0NF7q+o6vP5UkQ1UzEJhszLVs7stE9KFZ8FGS1SOHpnZs7fNRvscHnKypUcHMpr6yVjGwgX3Ube5ntVZi1XwIgmMOafSHwztHCICw7tK9vrq96vbK1bX/wJd/tzv
+sidebar_class_name: "delete api-method"
+info_path: docs/api/fjord-expense-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete an expense"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/expenses/{expense_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete an expense. Only expenses in draft status can be deleted.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./delete-expense.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./delete-expense.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./delete-expense.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

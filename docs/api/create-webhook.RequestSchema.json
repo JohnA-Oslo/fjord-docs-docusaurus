@@ -1,0 +1,1 @@
+{"title":"Body","body":{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["url","events"],"properties":{"url":{"type":"string","format":"uri"},"events":{"type":"array","items":{"type":"string","enum":["expense.created","expense.submitted","expense.approved","expense.rejected","invoice.created","invoice.sent","invoice.paid"]}}}}}}}}
