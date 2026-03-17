@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find '/d/Doc work/fjord-docs-docusaurus/node_modules' -type d -name *search*)"
+    ]
+  }
+}

@@ -7,6 +7,7 @@
 /* You can override the default Infima variables here. */
 
 :root {
+  --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="%23064380" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
   --ifm-color-primary: #2d6a9f;
   --ifm-color-primary-dark: #286090;
   --ifm-color-primary-darker: #255a88;
@@ -23,6 +24,7 @@
 }
 
 [data-theme='dark'] {
+  --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="%237bbfe9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
   --ifm-color-primary: #5ba3d0;
   --ifm-color-primary-dark: #4a96c8;
   --ifm-color-primary-darker: #4190c4;
@@ -58,6 +60,7 @@ li::marker {
 .navbar__logo {
   height: 40px;
   margin-right: 30px;
+  margin-top: 4px;
 }
 
 .navbar__title {
@@ -88,6 +91,15 @@ li::marker {
   color: #7bbfe9;
 }
 
+.navbarSearchContainer_Bca1 {
+  margin-top: 22px;
+  color: #064380;
+}
+
+.navbar__search-input searchInput_T5pz input_iKql {
+  color: #064380;
+}
+
 .navbar__brand {
   align-items:left;
   margin-left: 30px;
@@ -100,4 +112,8 @@ li::marker {
 
 .menu__list-item {
   padding-left: 30px;
+}
+
+.breadcrumbHomeIcon_YNFT {
+  color: #064380;
 }
