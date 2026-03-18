@@ -10,8 +10,23 @@ permissions:
   contents: write
 
 jobs:
+  lint:
+    name: Lint with Vale
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Vale
+        uses: errata-ai/vale-action@reviewdog
+        with:
+          files: docs/
+          vale_flags: "--minAlertLevel=error"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   deploy:
     name: Deploy to GitHub Pages
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
