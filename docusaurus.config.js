@@ -105,20 +105,49 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Documentation',
+            title: 'Getting started',
             items: [
               {
-                label: 'Getting Started',
-                to: '/docs/getting-started/quickstart', 
+                label: 'Quick start',
+                to: '/docs/getting-started/quickstart',
+              },
+              {
+                label: 'Authentication',
+                to: '/docs/getting-started/authentication',
+              },
+              {
+                label: 'Rate limits',
+                to: '/docs/getting-started/rate-limits',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Reference',
+            items: [
+              {
+                label: 'API reference',
+                to: '/docs/api/fjord-expense-api',
+              },
+              {
+                label: 'Webhooks',
+                to: '/docs/webhooks',
+              },
+              {
+                label: 'Error handling',
+                to: '/docs/errors',
+              },
+            ],
+          },
+          {
+            title: 'Project',
             items: [
               {
                 label: 'GitHub',
                 href: 'https://github.com/JohnA-Oslo/fjord-docs-docusaurus',
+              },
+              {
+                label: 'MkDocs version',
+                href: 'https://johna-oslo.github.io/fjord-expense-api/',
               },
             ],
           },
