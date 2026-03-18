@@ -1,8 +1,8 @@
-# Error Handling
+# Error handling
 
 The API uses standard HTTP status codes and returns structured error responses in JSON format.
 
-## Error Response Format
+## Error response format
 
 All error responses follow this structure:
 
@@ -28,7 +28,7 @@ All error responses follow this structure:
 - `request_id` - Correlation ID for debugging and support
 - `details` - Optional array of field-level error information
 
-## HTTP Status Codes
+## HTTP status codes
 
 ### 2xx Success
 
@@ -185,7 +185,7 @@ If you encounter persistent 5xx errors, contact support with the `request_id`.
 | `rate_limit_exceeded` | 429 | Too many requests |
 | `internal_server_error` | 500 | Server error |
 
-## Best Practices
+## Best practices
 
 **Check HTTP status codes first**
 
@@ -238,7 +238,7 @@ def handle_error(response):
     print(f"Request ID: {error_data['request_id']}")
 ```
 
-## Getting Help
+## Getting help
 
 If you encounter errors you cannot resolve:
 

@@ -127,7 +127,7 @@ def handle_webhook():
 - Second retry: after 5 minutes  
 - Third retry: after 15 minutes
 
-After 3 failed attempts, the webhook is automatically disabled.
+After 3 failed attempts, the webhook is automatically deactivated.
 
 **Order:** Events are sent in the order they occur, but delivery is not guaranteed to be in order due to retries.
 
@@ -247,6 +247,6 @@ Common errors when working with webhooks:
 
 **Log deliveries:** Keep logs of received webhooks for debugging and auditing.
 
-**Monitor failures:** If your endpoint is consistently failing, check your logs and fix any issues. The webhook will be automatically disabled after 3 consecutive failures.
+**Monitor failures:** If your endpoint is consistently failing, check your logs and fix any issues. The webhook will be automatically deactivated after 3 consecutive failures.
 
 **Use specific events:** Only subscribe to events you need. This reduces unnecessary traffic to your endpoint.
