@@ -121,3 +121,29 @@ li::marker {
 [data-theme='dark'] .breadcrumbHomeIcon_YNFT {
   color: #7bbfe9;
 }
+
+.footer {
+  background-color: #064380;
+}
+
+.footer__title {
+  color: #ffffff;
+}
+
+.footer__link-item {
+  color: #7bbfe9;
+}
+
+.footer__link-item:hover {
+  color: #ffffff;
+}
+
+.footer__copyright {
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.footer__links {
+  justify-content: center;
+  gap: 60px;
+}
